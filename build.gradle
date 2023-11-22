@@ -25,10 +25,13 @@ dependencies {
     testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '5.3.1'
     implementation group: 'io.rest-assured', name: 'json-schema-validator', version: '5.3.1'
     implementation 'org.json:json:20210307'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.8.0'
+    testImplementation group: 'org.json', name: 'json', version: '20230227'
 }
 
 test {
     useJUnitPlatform()
+    useTestNG()
 }
 
 configurations {
